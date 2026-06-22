@@ -8,39 +8,52 @@ Before Redis Lite, introduce the custom library.
 ### Dynamic Array
 Purpose
 Provides resizable contiguous storage similar to vector.
-#### Why Dynamic Array?
-Fast random access O(1) 
-Required for bucket storage in HashMap 
-Efficient memory utilization 
+#### Why Dynamic Array over simple array?
+It utilize memory efficiently because dynamic array increase its size when needed and need not to allocate large memory like a simple array. 
 #### Methods:-
-append() - O(1) amortized , get(index) - O(1) , insert(index) - O(n), remove(index) - O(n)
+#### append() - O(1) amortized 
+It take O(n) time for inserting n elements and O(n) for coping n elements during resizing So time complexity of for appending one element is O(2) which is constant that mean final time complexity for appending one element is O(1) amortized.
+#### get(index) - O(1)
+O(1) because in array we can directly jump to particular index in O(1)
+#### insert(index) - O(n)
+O(n) because in worst case we need to shift n elements to insert a element in middle.
+#### remove(index) - O(n)
+O(n) because in worst case we need to shift n elements to remove element in middle.
+#### size() O(1)
+O(1) because it return size of dynamic array stored in size variable.
 #### Generic Design
 template<typename T>
 class DynamicArray;
 #### Why Generic?
-A generic implementation allows the same Dynamic Array to store different data types without modifying the underlying code.
+A generic implementation allows the same Dynamic Array to store different data types without modifying the underlying code and also work for user defined data type.
 Examples:
 DynamicArray<int>
 DynamicArray<string>
 DynamicArray<Node*>
 DynamicArray<Entry<K,V>>
-Benefits:
-Code reusability 
-Type safety 
-Scalability 
-Support for user-defined objects
 Memory Management
 Initial Capacity = 4
-Reason:
-Small memory footprint 
-Suitable for lightweight applications 
-Reduces initial memory waste 
+Reason:  
+ because for lightweight applications size don`t grow or waste rapidly and Reduces initial memory waste
 Growth Strategy:
 4 → 8 → 16 → 32 → ...
 Capacity doubles when full.
 Benefits:
 Amortized O(1) insertion 
 Fewer reallocations 
+#### Constructor
+ allocate memory to array of initial size 
+ by new key word   int* arr = new int[4];   
+alternative by malloc - T* arr = (T*)malloc(4 *sizeof(T)); - it allocate space for 4 elements of data type T.
+#### Copy Constructor
+create a new object by deep copy by copying data of a object into new object.
+#### Destructor 
+free up the memory by 
+delete keyword -  delete[] arr;
+alternative by free -
+free(arr);
+arr = nullptr; 
+
 
 ### Doubly Linked List
 Purpose
