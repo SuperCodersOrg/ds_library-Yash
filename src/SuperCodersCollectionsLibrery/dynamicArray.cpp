@@ -33,6 +33,21 @@ class DynamicArray{
                 new(&arr[i]) T(other.arr[i]);
             }
         }
+
+        DynamicArray& operator=(const DynamicArray& other){
+            if(this == &other) return *this;
+            for(int i = 0; i < size; i++){
+                arr[i].~T();
+            }
+            free(arr);
+            capacity = other.capacity;
+            size = other.size;
+            arr = (T*)malloc(capacity*sizeof(T));
+            for(int i = 0; i < size; i++){
+                new(&arr[i]) T(other.arr[i]);
+            }
+            return *this;
+        }
         ~DynamicArray(){
             for(int i =0; i<size ;i++){
                 arr[i].~T();

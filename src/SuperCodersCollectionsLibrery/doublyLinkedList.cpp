@@ -38,6 +38,28 @@ public:
         }
     }
 
+    DoublyLinkedList& operator=(const DoublyLinkedList& other) {
+        if (this == &other) return *this;
+        
+        while (head) {
+            DNode<T>* temp = head;
+            head = head->next;
+            temp->data.~T();
+            free(temp);
+        }
+        
+        head = nullptr;
+        tail = nullptr;
+        size = 0;
+        
+        DNode<T>* current = other.head;
+        while (current) {
+            append(current->data);
+            current = current->next;
+        }
+        return *this;
+    }
+
     ~DoublyLinkedList() {
         while (head) {
             DNode<T>* temp = head;

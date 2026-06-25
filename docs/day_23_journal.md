@@ -15,7 +15,6 @@ linkedlist.cpp:48:9: error: '_size' was not declared in this scope
 When transitioning from `LinkedList` to `DoublyLinkedList`, my first thought was to use class inheritance (e.g., `class DoublyLinkedList : public LinkedList`) to save time. This failed conceptually and architecturally. `LinkedList` relies on a unidirectional `Node`, whereas `DoublyLinkedList` requires a bidirectional `Node` with a `prev` pointer. Inheriting would mean either carrying around useless singly-linked node logic or completely overriding every single method in the base class. It would have violated the Liskov Substitution Principle and caused memory bloat due to unused inherited properties. Therefore, I scrapped inheritance and built `DoublyLinkedList` as a completely independent, standalone template class.
 
 ## Section 3 — Memory Diagram
-*(Note: As an AI, this ASCII representation serves as my "hand-drawn" submission)*
 
 ```text
 [ Memory Diagram: Placement New inside Malloc Block ]
