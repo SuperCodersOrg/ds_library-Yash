@@ -128,4 +128,33 @@ int HashMap<K, V>::getSize() const {
     return size;
 }
 
+template<typename K, typename V>
+bool HashMap<K, V>::exist(K key) const {
+    int idx = getBucketIndex(key);
+    const DoublyLinkedList<Node<K, V>>& chain = buckets.get(idx);
+    
+    int chainSize = chain.getSize();
+    for (int i = 0; i < chainSize; i++) {
+        Node<K, V> entry = chain.get(i);
+        if (entry.key == key) {
+            return true;
+        }
+    }
+    return false;
+}
+
+template<typename K, typename V>
+void HashMap<K, V>::clear() {
+    for (int i = 0; i < capacity; i++) {
+        buckets.get(i).~DoublyLinkedList();
+        buckets.get(i) = DoublyLinkedList<Node<K, V>>();
+    }
+    size = 0;
+}
+
+template<typename K, typename V>
+bool HashMap<K, V>::empty() const {
+    return size == 0;
+}
+
 #endif // HASHMAP_CPP

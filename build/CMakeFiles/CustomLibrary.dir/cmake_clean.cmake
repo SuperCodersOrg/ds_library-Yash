@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj"
+  "CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj.d"
   "CMakeFiles/CustomLibrary.dir/src/customLibrery/doublyLinkedList.cpp.obj"
   "CMakeFiles/CustomLibrary.dir/src/customLibrery/doublyLinkedList.cpp.obj.d"
   "CMakeFiles/CustomLibrary.dir/src/customLibrery/dynamicArray.cpp.obj"
@@ -9,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CustomLibrary.dir/src/customLibrery/hashMap.cpp.obj.d"
   "CMakeFiles/CustomLibrary.dir/src/customLibrery/linkedList.cpp.obj"
   "CMakeFiles/CustomLibrary.dir/src/customLibrery/linkedList.cpp.obj.d"
+  "CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj"
+  "CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj.d"
   "libCustomLibrary.a"
   "libCustomLibrary.pdb"
 )

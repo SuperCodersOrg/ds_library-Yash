@@ -165,6 +165,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RedisLite.dir\build.make CMakeFiles/RedisLite.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/customLibrery/commandParser.obj: src/customLibrery/commandParser.cpp.obj
+.PHONY : src/customLibrery/commandParser.obj
+
+# target to build an object file
+src/customLibrery/commandParser.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj
+.PHONY : src/customLibrery/commandParser.cpp.obj
+
+src/customLibrery/commandParser.i: src/customLibrery/commandParser.cpp.i
+.PHONY : src/customLibrery/commandParser.i
+
+# target to preprocess a source file
+src/customLibrery/commandParser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.i
+.PHONY : src/customLibrery/commandParser.cpp.i
+
+src/customLibrery/commandParser.s: src/customLibrery/commandParser.cpp.s
+.PHONY : src/customLibrery/commandParser.s
+
+# target to generate assembly for a file
+src/customLibrery/commandParser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.s
+.PHONY : src/customLibrery/commandParser.cpp.s
+
 src/customLibrery/doublyLinkedList.obj: src/customLibrery/doublyLinkedList.cpp.obj
 .PHONY : src/customLibrery/doublyLinkedList.obj
 
@@ -285,6 +309,30 @@ src/customLibrery/linkedList.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/src/customLibrery/linkedList.cpp.s
 .PHONY : src/customLibrery/linkedList.cpp.s
 
+src/customLibrery/redisLite.obj: src/customLibrery/redisLite.cpp.obj
+.PHONY : src/customLibrery/redisLite.obj
+
+# target to build an object file
+src/customLibrery/redisLite.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj
+.PHONY : src/customLibrery/redisLite.cpp.obj
+
+src/customLibrery/redisLite.i: src/customLibrery/redisLite.cpp.i
+.PHONY : src/customLibrery/redisLite.i
+
+# target to preprocess a source file
+src/customLibrery/redisLite.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.i
+.PHONY : src/customLibrery/redisLite.cpp.i
+
+src/customLibrery/redisLite.s: src/customLibrery/redisLite.cpp.s
+.PHONY : src/customLibrery/redisLite.s
+
+# target to generate assembly for a file
+src/customLibrery/redisLite.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.s
+.PHONY : src/customLibrery/redisLite.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -298,6 +346,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... src/customLibrery/commandParser.obj
+	@echo ... src/customLibrery/commandParser.i
+	@echo ... src/customLibrery/commandParser.s
 	@echo ... src/customLibrery/doublyLinkedList.obj
 	@echo ... src/customLibrery/doublyLinkedList.i
 	@echo ... src/customLibrery/doublyLinkedList.s
@@ -313,6 +364,9 @@ help:
 	@echo ... src/customLibrery/linkedList.obj
 	@echo ... src/customLibrery/linkedList.i
 	@echo ... src/customLibrery/linkedList.s
+	@echo ... src/customLibrery/redisLite.obj
+	@echo ... src/customLibrery/redisLite.i
+	@echo ... src/customLibrery/redisLite.s
 .PHONY : help
 
 

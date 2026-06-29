@@ -87,12 +87,12 @@ clean: CMakeFiles/RedisLite.dir/clean
 CMakeFiles/CustomLibrary.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target CustomLibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target CustomLibrary"
 .PHONY : CMakeFiles/CustomLibrary.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/CustomLibrary.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\projects\RedisLite\build\CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\projects\RedisLite\build\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/CustomLibrary.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\projects\RedisLite\build\CMakeFiles 0
 .PHONY : CMakeFiles/CustomLibrary.dir/rule
@@ -104,7 +104,7 @@ CustomLibrary: CMakeFiles/CustomLibrary.dir/rule
 # codegen rule for target.
 CMakeFiles/CustomLibrary.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target CustomLibrary"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Finished codegen for target CustomLibrary"
 .PHONY : CMakeFiles/CustomLibrary.dir/codegen
 
 # clean rule for target.
@@ -119,12 +119,12 @@ CMakeFiles/CustomLibrary.dir/clean:
 CMakeFiles/RedisLite.dir/all: CMakeFiles/CustomLibrary.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RedisLite.dir\build.make CMakeFiles/RedisLite.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RedisLite.dir\build.make CMakeFiles/RedisLite.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=7,8 "Built target RedisLite"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=9,10 "Built target RedisLite"
 .PHONY : CMakeFiles/RedisLite.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RedisLite.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\projects\RedisLite\build\CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\projects\RedisLite\build\CMakeFiles 10
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/RedisLite.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\projects\RedisLite\build\CMakeFiles 0
 .PHONY : CMakeFiles/RedisLite.dir/rule
@@ -136,7 +136,7 @@ RedisLite: CMakeFiles/RedisLite.dir/rule
 # codegen rule for target.
 CMakeFiles/RedisLite.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RedisLite.dir\build.make CMakeFiles/RedisLite.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=7,8 "Finished codegen for target RedisLite"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=9,10 "Finished codegen for target RedisLite"
 .PHONY : CMakeFiles/RedisLite.dir/codegen
 
 # clean rule for target.

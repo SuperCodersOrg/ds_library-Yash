@@ -34,7 +34,10 @@ public:
     void set(K key, V value);
     V get(K key) const;
     void remove(K key);
+    bool exist(K key) const;
+    void clear();
     int getSize() const;
+    bool empty() const;
 };
 
 #include "../src/customLibrery/hashMap.cpp"

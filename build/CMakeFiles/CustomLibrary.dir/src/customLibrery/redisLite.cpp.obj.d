@@ -1,6 +1,6 @@
-CMakeFiles/CustomLibrary.dir/src/customLibrery/hashFunction.cpp.obj: \
- D:\projects\RedisLite\src\customLibrery\hashFunction.cpp \
- D:/projects/RedisLite/include/hashFunction.h \
+CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj: \
+ D:\projects\RedisLite\src\customLibrery\redisLite.cpp \
+ D:/projects/RedisLite/include/redisLite.h \
  D:/cppCompliler/mingw64/include/c++/16.1.0/string \
  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/requires_hosted.h \
  D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -104,4 +104,15 @@ CMakeFiles/CustomLibrary.dir/src/customLibrery/hashFunction.cpp.obj: \
  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/uses_allocator.h \
  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/uses_allocator_args.h \
  D:/cppCompliler/mingw64/include/c++/16.1.0/tuple \
- D:/cppCompliler/mingw64/include/c++/16.1.0/bits/invoke.h
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/invoke.h \
+ D:/projects/RedisLite/include/SuperCodersCollections.h \
+ D:/projects/RedisLite/include/dynamicArray.h \
+ D:/projects/RedisLite/src/customLibrery/dynamicArray.cpp \
+ D:/projects/RedisLite/include/linkedList.h \
+ D:/projects/RedisLite/src/customLibrery/linkedList.cpp \
+ D:/projects/RedisLite/include/doublyLinkedList.h \
+ D:/projects/RedisLite/src/customLibrery/doublyLinkedList.cpp \
+ D:/projects/RedisLite/include/hashMap.h \
+ D:/projects/RedisLite/include/hashFunction.h \
+ D:/projects/RedisLite/src/customLibrery/hashFunction.cpp \
+ D:/projects/RedisLite/src/customLibrery/hashMap.cpp

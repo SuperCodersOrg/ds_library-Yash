@@ -11,6 +11,8 @@ add_library(CustomLibrary
     src/customLibrery/linkedList.cpp
     src/customLibrery/hashFunction.cpp
     src/customLibrery/hashMap.cpp
+    src/customLibrery/redisLite.cpp
+    src/customLibrery/commandParser.cpp
 )
 target_include_directories(CustomLibrary PUBLIC include)
 

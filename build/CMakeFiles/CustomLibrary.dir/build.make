@@ -146,13 +146,45 @@ CMakeFiles/CustomLibrary.dir/src/customLibrery/hashMap.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CustomLibrary.dir/src/customLibrery/hashMap.cpp.s"
 	D:\cppCompliler\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\RedisLite\src\customLibrery\hashMap.cpp -o CMakeFiles\CustomLibrary.dir\src\customLibrery\hashMap.cpp.s
 
+CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj: CMakeFiles/CustomLibrary.dir/flags.make
+CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj: CMakeFiles/CustomLibrary.dir/includes_CXX.rsp
+CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj: D:/projects/RedisLite/src/customLibrery/redisLite.cpp
+CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj: CMakeFiles/CustomLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj"
+	D:\cppCompliler\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj -MF CMakeFiles\CustomLibrary.dir\src\customLibrery\redisLite.cpp.obj.d -o CMakeFiles\CustomLibrary.dir\src\customLibrery\redisLite.cpp.obj -c D:\projects\RedisLite\src\customLibrery\redisLite.cpp
+
+CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.i"
+	D:\cppCompliler\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\RedisLite\src\customLibrery\redisLite.cpp > CMakeFiles\CustomLibrary.dir\src\customLibrery\redisLite.cpp.i
+
+CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.s"
+	D:\cppCompliler\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\RedisLite\src\customLibrery\redisLite.cpp -o CMakeFiles\CustomLibrary.dir\src\customLibrery\redisLite.cpp.s
+
+CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj: CMakeFiles/CustomLibrary.dir/flags.make
+CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj: CMakeFiles/CustomLibrary.dir/includes_CXX.rsp
+CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj: D:/projects/RedisLite/src/customLibrery/commandParser.cpp
+CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj: CMakeFiles/CustomLibrary.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj"
+	D:\cppCompliler\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj -MF CMakeFiles\CustomLibrary.dir\src\customLibrery\commandParser.cpp.obj.d -o CMakeFiles\CustomLibrary.dir\src\customLibrery\commandParser.cpp.obj -c D:\projects\RedisLite\src\customLibrery\commandParser.cpp
+
+CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.i"
+	D:\cppCompliler\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\projects\RedisLite\src\customLibrery\commandParser.cpp > CMakeFiles\CustomLibrary.dir\src\customLibrery\commandParser.cpp.i
+
+CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.s"
+	D:\cppCompliler\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\projects\RedisLite\src\customLibrery\commandParser.cpp -o CMakeFiles\CustomLibrary.dir\src\customLibrery\commandParser.cpp.s
+
 # Object files for target CustomLibrary
 CustomLibrary_OBJECTS = \
 "CMakeFiles/CustomLibrary.dir/src/customLibrery/dynamicArray.cpp.obj" \
 "CMakeFiles/CustomLibrary.dir/src/customLibrery/doublyLinkedList.cpp.obj" \
 "CMakeFiles/CustomLibrary.dir/src/customLibrery/linkedList.cpp.obj" \
 "CMakeFiles/CustomLibrary.dir/src/customLibrery/hashFunction.cpp.obj" \
-"CMakeFiles/CustomLibrary.dir/src/customLibrery/hashMap.cpp.obj"
+"CMakeFiles/CustomLibrary.dir/src/customLibrery/hashMap.cpp.obj" \
+"CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj" \
+"CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj"
 
 # External object files for target CustomLibrary
 CustomLibrary_EXTERNAL_OBJECTS =
@@ -162,9 +194,11 @@ libCustomLibrary.a: CMakeFiles/CustomLibrary.dir/src/customLibrery/doublyLinkedL
 libCustomLibrary.a: CMakeFiles/CustomLibrary.dir/src/customLibrery/linkedList.cpp.obj
 libCustomLibrary.a: CMakeFiles/CustomLibrary.dir/src/customLibrery/hashFunction.cpp.obj
 libCustomLibrary.a: CMakeFiles/CustomLibrary.dir/src/customLibrery/hashMap.cpp.obj
+libCustomLibrary.a: CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.obj
+libCustomLibrary.a: CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj
 libCustomLibrary.a: CMakeFiles/CustomLibrary.dir/build.make
 libCustomLibrary.a: CMakeFiles/CustomLibrary.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libCustomLibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\projects\RedisLite\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX static library libCustomLibrary.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\CustomLibrary.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\CustomLibrary.dir\link.txt --verbose=$(VERBOSE)
 

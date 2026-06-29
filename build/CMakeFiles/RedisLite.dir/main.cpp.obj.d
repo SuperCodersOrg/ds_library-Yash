@@ -153,19 +153,16 @@ CMakeFiles/RedisLite.dir/main.cpp.obj: D:\projects\RedisLite\main.cpp \
  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/ostream.tcc \
  D:/cppCompliler/mingw64/include/c++/16.1.0/istream \
  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/istream.tcc \
+ D:/projects/RedisLite/include/commandParser.h \
+ D:/projects/RedisLite/include/redisLite.h \
  D:/projects/RedisLite/include/SuperCodersCollections.h \
  D:/projects/RedisLite/include/dynamicArray.h \
  D:/projects/RedisLite/src/customLibrery/dynamicArray.cpp \
- D:/projects/RedisLite/include/dynamicArray.h \
  D:/projects/RedisLite/include/linkedList.h \
  D:/projects/RedisLite/src/customLibrery/linkedList.cpp \
- D:/projects/RedisLite/include/linkedList.h \
  D:/projects/RedisLite/include/doublyLinkedList.h \
  D:/projects/RedisLite/src/customLibrery/doublyLinkedList.cpp \
- D:/projects/RedisLite/include/doublyLinkedList.h \
  D:/projects/RedisLite/include/hashMap.h \
  D:/projects/RedisLite/include/hashFunction.h \
  D:/projects/RedisLite/src/customLibrery/hashFunction.cpp \
- D:/projects/RedisLite/include/hashFunction.h \
- D:/projects/RedisLite/src/customLibrery/hashMap.cpp \
- D:/projects/RedisLite/include/hashMap.h
+ D:/projects/RedisLite/src/customLibrery/hashMap.cpp

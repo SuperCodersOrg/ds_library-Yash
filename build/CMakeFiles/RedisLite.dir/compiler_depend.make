@@ -157,11 +157,13 @@ CMakeFiles/RedisLite.dir/main.cpp.obj: D:/projects/RedisLite/main.cpp \
   D:/cppCompliler/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/stddef.h \
   D:/cppCompliler/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h \
   D:/projects/RedisLite/include/SuperCodersCollections.h \
+  D:/projects/RedisLite/include/commandParser.h \
   D:/projects/RedisLite/include/doublyLinkedList.h \
   D:/projects/RedisLite/include/dynamicArray.h \
   D:/projects/RedisLite/include/hashFunction.h \
   D:/projects/RedisLite/include/hashMap.h \
   D:/projects/RedisLite/include/linkedList.h \
+  D:/projects/RedisLite/include/redisLite.h \
   D:/projects/RedisLite/src/customLibrery/doublyLinkedList.cpp \
   D:/projects/RedisLite/src/customLibrery/dynamicArray.cpp \
   D:/projects/RedisLite/src/customLibrery/hashFunction.cpp \
@@ -433,6 +435,8 @@ D:/cppCompliler/mingw64/include/corecrt.h:
 
 D:/cppCompliler/mingw64/include/corecrt_startup.h:
 
+D:/projects/RedisLite/include/redisLite.h:
+
 D:/cppCompliler/mingw64/include/corecrt_wconio.h:
 
 D:/cppCompliler/mingw64/include/corecrt_wctype.h:
@@ -488,6 +492,8 @@ D:/cppCompliler/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/mm_malloc.h:
 D:/cppCompliler/mingw64/lib/gcc/x86_64-w64-mingw32/16.1.0/include/syslimits.h:
 
 D:/projects/RedisLite/include/SuperCodersCollections.h:
+
+D:/projects/RedisLite/include/commandParser.h:
 
 D:/projects/RedisLite/include/dynamicArray.h:
 

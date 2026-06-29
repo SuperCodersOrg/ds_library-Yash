@@ -1,6 +1,6 @@
-CMakeFiles/CustomLibrary.dir/src/customLibrery/hashFunction.cpp.obj: \
- D:\projects\RedisLite\src\customLibrery\hashFunction.cpp \
- D:/projects/RedisLite/include/hashFunction.h \
+CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj: \
+ D:\projects\RedisLite\src\customLibrery\commandParser.cpp \
+ D:/projects/RedisLite/include/commandParser.h \
  D:/cppCompliler/mingw64/include/c++/16.1.0/string \
  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/requires_hosted.h \
  D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -104,4 +104,66 @@ CMakeFiles/CustomLibrary.dir/src/customLibrery/hashFunction.cpp.obj: \
  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/uses_allocator.h \
  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/uses_allocator_args.h \
  D:/cppCompliler/mingw64/include/c++/16.1.0/tuple \
- D:/cppCompliler/mingw64/include/c++/16.1.0/bits/invoke.h
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/invoke.h \
+ D:/projects/RedisLite/include/redisLite.h \
+ D:/projects/RedisLite/include/SuperCodersCollections.h \
+ D:/projects/RedisLite/include/dynamicArray.h \
+ D:/projects/RedisLite/src/customLibrery/dynamicArray.cpp \
+ D:/projects/RedisLite/include/linkedList.h \
+ D:/projects/RedisLite/src/customLibrery/linkedList.cpp \
+ D:/projects/RedisLite/include/doublyLinkedList.h \
+ D:/projects/RedisLite/src/customLibrery/doublyLinkedList.cpp \
+ D:/projects/RedisLite/include/hashMap.h \
+ D:/projects/RedisLite/include/hashFunction.h \
+ D:/projects/RedisLite/src/customLibrery/hashFunction.cpp \
+ D:/projects/RedisLite/src/customLibrery/hashMap.cpp \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/iostream \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/ostream \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/ostream.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/ios \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/exception \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/exception_ptr.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/cxxabi_init_exception.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/typeinfo \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/nested_exception.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/ios_base.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/ext/atomicity.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/gthr-default.h \
+ D:/cppCompliler/mingw64/include/pthread.h \
+ D:/cppCompliler/mingw64/include/sys/types.h \
+ D:/cppCompliler/mingw64/include/process.h \
+ D:/cppCompliler/mingw64/include/corecrt_startup.h \
+ D:/cppCompliler/mingw64/include/signal.h \
+ D:/cppCompliler/mingw64/include/pthread_signal.h \
+ D:/cppCompliler/mingw64/include/time.h \
+ D:/cppCompliler/mingw64/include/sys/timeb.h \
+ D:/cppCompliler/mingw64/include/sec_api/sys/timeb_s.h \
+ D:/cppCompliler/mingw64/include/_timeval.h \
+ D:/cppCompliler/mingw64/include/pthread_time.h \
+ D:/cppCompliler/mingw64/include/pthread_compat.h \
+ D:/cppCompliler/mingw64/include/sched.h \
+ D:/cppCompliler/mingw64/include/pthread_unistd.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/atomic_word.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/locale_classes.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/functexcept.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/locale_classes.tcc \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/system_error \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/error_constants.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/stdexcept \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stdexcept_except.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/streambuf \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/streambuf.tcc \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/basic_ios.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/locale_facets.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/cwctype \
+ D:/cppCompliler/mingw64/include/wctype.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/ctype_base.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/streambuf_iterator.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/ctype_inline.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/locale_facets.tcc \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/basic_ios.tcc \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/ostream_print.h \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/ostream.tcc \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/istream \
+ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/istream.tcc
