@@ -108,6 +108,7 @@ void DynamicArray<T>::remove(int idx){
     for(int i = idx; i<size-1; i++){
         new(&arr[i]) T(arr[i+1]);
     }
+    arr[size-1].~T();
     size--;
 }
 

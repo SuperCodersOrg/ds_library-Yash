@@ -32,7 +32,8 @@ public:
     ~HashMap();
     
     void set(K key, V value);
-    V get(K key) const;
+    V& get(K key);  
+    const V& get(K key) const; 
     void remove(K key);
     bool exist(K key) const;
     void clear();

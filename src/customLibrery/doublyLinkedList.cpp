@@ -81,23 +81,33 @@ void DoublyLinkedList<T>::append(T val) {
 }
 
 template<typename T>
-T DoublyLinkedList<T>::get(int index) const {
+T& DoublyLinkedList<T>::get(int index) {
     if (index < 0 || index >= size) {
         throw "Index out of bounds";
     }
-    
     DNode<T>* current;
-    
     if (index < size / 2) {
         current = head;
-        for (int i = 0; i < index; i++) {
-            current = current->next;
-        }
+        for (int i = 0; i < index; i++) current = current->next;
     } else {
         current = tail;
-        for (int i = size - 1; i > index; i--) {
-            current = current->prev;
-        }
+        for (int i = size - 1; i > index; i--) current = current->prev;
+    }
+    return current->data;
+}
+
+template<typename T>
+const T& DoublyLinkedList<T>::get(int index) const {
+    if (index < 0 || index >= size) {
+        throw "Index out of bounds";
+    }
+    DNode<T>* current;
+    if (index < size / 2) {
+        current = head;
+        for (int i = 0; i < index; i++) current = current->next;
+    } else {
+        current = tail;
+        for (int i = size - 1; i > index; i--) current = current->prev;
     }
     return current->data;
 }

@@ -1,0 +1,5 @@
+if(EXISTS "D:/projects/RedisLite/build/LinkedListTests_e3b0c442_tests.cmake")
+  include("D:/projects/RedisLite/build/LinkedListTests_e3b0c442_tests.cmake")
+else()
+  add_test(LinkedListTests_NOT_BUILT LinkedListTests_NOT_BUILT)
+endif()

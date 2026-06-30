@@ -55,7 +55,19 @@ void LinkedList<T>::append(T val) {
 }
 
 template<typename T>
-T LinkedList<T>::get(int index) const {
+T& LinkedList<T>::get(int index) {
+    if (index < 0 || index >= size) {
+        throw "Index out of bounds";
+    }
+    SNode<T>* current = head;
+    for (int i = 0; i < index; i++) {
+        current = current->next;
+    }
+    return current->data;
+}
+
+template<typename T>
+const T& LinkedList<T>::get(int index) const {
     if (index < 0 || index >= size) {
         throw "Index out of bounds";
     }

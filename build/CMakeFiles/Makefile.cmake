@@ -7,12 +7,15 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCXXInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeDependentOption.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeGenericSystem.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakePackageConfigHelpers.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeRCInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake"
@@ -20,6 +23,15 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU-CXX.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Compiler/GNU.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/ExternalProject/shared_internal_commands.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/FetchContent.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/FetchContent/CMakeLists.cmake.in"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/FindPackageHandleStandardArgs.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/FindPackageMessage.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/FindPython/Support.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/FindPython3.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/GNUInstallDirs.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/GoogleTest.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake"
@@ -39,11 +51,21 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows-windres.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.4/Modules/Platform/WindowsPaths.cmake"
+  "C:/Program Files/CMake/share/cmake-4.4/Modules/WriteBasicConfigVersionFile.cmake"
   "D:/projects/RedisLite/CMakeLists.txt"
   "CMakeFiles/4.4.0-rc2/CMakeCCompiler.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeRCCompiler.cmake"
   "CMakeFiles/4.4.0-rc2/CMakeSystem.cmake"
+  "_deps/googletest-src/CMakeLists.txt"
+  "_deps/googletest-src/googlemock/CMakeLists.txt"
+  "_deps/googletest-src/googlemock/cmake/gmock.pc.in"
+  "_deps/googletest-src/googlemock/cmake/gmock_main.pc.in"
+  "_deps/googletest-src/googletest/CMakeLists.txt"
+  "_deps/googletest-src/googletest/cmake/Config.cmake.in"
+  "_deps/googletest-src/googletest/cmake/gtest.pc.in"
+  "_deps/googletest-src/googletest/cmake/gtest_main.pc.in"
+  "_deps/googletest-src/googletest/cmake/internal_utils.cmake"
   )
 
 # The corresponding makefile is:
@@ -54,11 +76,34 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "_deps/googletest-subbuild/CMakeLists.txt"
+  "DynamicArrayTests_e3b0c442_discovery.cmake"
+  "DynamicArrayTests_e3b0c442_include.cmake"
+  "LinkedListTests_e3b0c442_discovery.cmake"
+  "LinkedListTests_e3b0c442_include.cmake"
+  "HashMapTests_e3b0c442_discovery.cmake"
+  "HashMapTests_e3b0c442_include.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/googletest-build/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/googletest-build/googletest/generated/gmock.pc"
+  "_deps/googletest-build/googletest/generated/gmock_main.pc"
+  "_deps/googletest-build/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "_deps/googletest-build/googletest/generated/GTestConfigVersion.cmake"
+  "_deps/googletest-build/googletest/generated/GTestConfig.cmake"
+  "_deps/googletest-build/googletest/generated/gtest.pc"
+  "_deps/googletest-build/googletest/generated/gtest_main.pc"
+  "_deps/googletest-build/googletest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/CustomLibrary.dir/DependInfo.cmake"
   "CMakeFiles/RedisLite.dir/DependInfo.cmake"
+  "CMakeFiles/DynamicArrayTests.dir/DependInfo.cmake"
+  "CMakeFiles/LinkedListTests.dir/DependInfo.cmake"
+  "CMakeFiles/HashMapTests.dir/DependInfo.cmake"
+  "_deps/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "_deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "_deps/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "_deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
   )

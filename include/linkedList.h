@@ -20,7 +20,8 @@ public:
     ~LinkedList();
 
     void append(T val);
-    T get(int index) const;
+    T& get(int index);  //TODO: fix const
+    const T& get(int index) const; //TODO: fix const
     void insert(int index, T val);
     void remove(int index);
     int getSize() const;

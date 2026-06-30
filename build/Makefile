@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = D:\projects\RedisLite\build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	"C:\Program Files\CMake\bin\ctest.exe" $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -83,6 +93,51 @@ rebuild_cache:
 # Special rule for the target rebuild_cache
 rebuild_cache/fast: rebuild_cache
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Available install components are: \"gmock\" \"gtest\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
+	"C:\Program Files\CMake\bin\cmake.exe" -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
+	"C:\Program Files\CMake\bin\cmake.exe" -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -140,6 +195,97 @@ RedisLite: cmake_check_build_system
 RedisLite/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\RedisLite.dir\build.make CMakeFiles/RedisLite.dir/build
 .PHONY : RedisLite/fast
+
+#=============================================================================
+# Target rules for targets named DynamicArrayTests
+
+# Build rule for target.
+DynamicArrayTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DynamicArrayTests
+.PHONY : DynamicArrayTests
+
+# fast build rule for target.
+DynamicArrayTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/build
+.PHONY : DynamicArrayTests/fast
+
+#=============================================================================
+# Target rules for targets named LinkedListTests
+
+# Build rule for target.
+LinkedListTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LinkedListTests
+.PHONY : LinkedListTests
+
+# fast build rule for target.
+LinkedListTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedListTests.dir\build.make CMakeFiles/LinkedListTests.dir/build
+.PHONY : LinkedListTests/fast
+
+#=============================================================================
+# Target rules for targets named HashMapTests
+
+# Build rule for target.
+HashMapTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 HashMapTests
+.PHONY : HashMapTests
+
+# fast build rule for target.
+HashMapTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HashMapTests.dir\build.make CMakeFiles/HashMapTests.dir/build
+.PHONY : HashMapTests/fast
+
+#=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googlemock\CMakeFiles\gmock_main.dir\build.make _deps/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
+# Target rules for targets named gtest
+
+# Build rule for target.
+gtest: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+#=============================================================================
+# Target rules for targets named gtest_main
+
+# Build rule for target.
+gtest_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 gtest_main
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	$(MAKE) $(MAKESILENT) -f _deps\googletest-build\googletest\CMakeFiles\gtest_main.dir\build.make _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
 
 main.obj: main.cpp.obj
 .PHONY : main.obj
@@ -333,6 +479,78 @@ src/customLibrery/redisLite.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CustomLibrary.dir\build.make CMakeFiles/CustomLibrary.dir/src/customLibrery/redisLite.cpp.s
 .PHONY : src/customLibrery/redisLite.cpp.s
 
+test/DynamicArrayTests.obj: test/DynamicArrayTests.cpp.obj
+.PHONY : test/DynamicArrayTests.obj
+
+# target to build an object file
+test/DynamicArrayTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/test/DynamicArrayTests.cpp.obj
+.PHONY : test/DynamicArrayTests.cpp.obj
+
+test/DynamicArrayTests.i: test/DynamicArrayTests.cpp.i
+.PHONY : test/DynamicArrayTests.i
+
+# target to preprocess a source file
+test/DynamicArrayTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/test/DynamicArrayTests.cpp.i
+.PHONY : test/DynamicArrayTests.cpp.i
+
+test/DynamicArrayTests.s: test/DynamicArrayTests.cpp.s
+.PHONY : test/DynamicArrayTests.s
+
+# target to generate assembly for a file
+test/DynamicArrayTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DynamicArrayTests.dir\build.make CMakeFiles/DynamicArrayTests.dir/test/DynamicArrayTests.cpp.s
+.PHONY : test/DynamicArrayTests.cpp.s
+
+test/HashMapTests.obj: test/HashMapTests.cpp.obj
+.PHONY : test/HashMapTests.obj
+
+# target to build an object file
+test/HashMapTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HashMapTests.dir\build.make CMakeFiles/HashMapTests.dir/test/HashMapTests.cpp.obj
+.PHONY : test/HashMapTests.cpp.obj
+
+test/HashMapTests.i: test/HashMapTests.cpp.i
+.PHONY : test/HashMapTests.i
+
+# target to preprocess a source file
+test/HashMapTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HashMapTests.dir\build.make CMakeFiles/HashMapTests.dir/test/HashMapTests.cpp.i
+.PHONY : test/HashMapTests.cpp.i
+
+test/HashMapTests.s: test/HashMapTests.cpp.s
+.PHONY : test/HashMapTests.s
+
+# target to generate assembly for a file
+test/HashMapTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\HashMapTests.dir\build.make CMakeFiles/HashMapTests.dir/test/HashMapTests.cpp.s
+.PHONY : test/HashMapTests.cpp.s
+
+test/LinkedListTests.obj: test/LinkedListTests.cpp.obj
+.PHONY : test/LinkedListTests.obj
+
+# target to build an object file
+test/LinkedListTests.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedListTests.dir\build.make CMakeFiles/LinkedListTests.dir/test/LinkedListTests.cpp.obj
+.PHONY : test/LinkedListTests.cpp.obj
+
+test/LinkedListTests.i: test/LinkedListTests.cpp.i
+.PHONY : test/LinkedListTests.i
+
+# target to preprocess a source file
+test/LinkedListTests.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedListTests.dir\build.make CMakeFiles/LinkedListTests.dir/test/LinkedListTests.cpp.i
+.PHONY : test/LinkedListTests.cpp.i
+
+test/LinkedListTests.s: test/LinkedListTests.cpp.s
+.PHONY : test/LinkedListTests.s
+
+# target to generate assembly for a file
+test/LinkedListTests.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LinkedListTests.dir\build.make CMakeFiles/LinkedListTests.dir/test/LinkedListTests.cpp.s
+.PHONY : test/LinkedListTests.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -340,9 +558,21 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
+	@echo ... install
+	@echo ... install/local
+	@echo ... install/strip
+	@echo ... list_install_components
 	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... CustomLibrary
+	@echo ... DynamicArrayTests
+	@echo ... HashMapTests
+	@echo ... LinkedListTests
 	@echo ... RedisLite
+	@echo ... gmock
+	@echo ... gmock_main
+	@echo ... gtest
+	@echo ... gtest_main
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
@@ -367,6 +597,15 @@ help:
 	@echo ... src/customLibrery/redisLite.obj
 	@echo ... src/customLibrery/redisLite.i
 	@echo ... src/customLibrery/redisLite.s
+	@echo ... test/DynamicArrayTests.obj
+	@echo ... test/DynamicArrayTests.i
+	@echo ... test/DynamicArrayTests.s
+	@echo ... test/HashMapTests.obj
+	@echo ... test/HashMapTests.i
+	@echo ... test/HashMapTests.s
+	@echo ... test/LinkedListTests.obj
+	@echo ... test/LinkedListTests.i
+	@echo ... test/LinkedListTests.s
 .PHONY : help
 
 

@@ -1,0 +1,5 @@
+if(EXISTS "D:/projects/RedisLite/build/HashMapTests_e3b0c442_tests.cmake")
+  include("D:/projects/RedisLite/build/HashMapTests_e3b0c442_tests.cmake")
+else()
+  add_test(HashMapTests_NOT_BUILT HashMapTests_NOT_BUILT)
+endif()

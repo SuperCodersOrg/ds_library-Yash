@@ -23,7 +23,8 @@ public:
     ~DoublyLinkedList();
     
     void append(T val);
-    T get(int index) const;
+    T& get(int index);
+    const T& get(int index) const;
     void insert(int index, T val);
     void remove(int index);
     int getSize() const;

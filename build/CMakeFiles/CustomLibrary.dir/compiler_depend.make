@@ -8,10 +8,8 @@ CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj: D:/project
   D:/cppCompliler/mingw64/include/_mingw_secapi.h \
   D:/cppCompliler/mingw64/include/_mingw_stat64.h \
   D:/cppCompliler/mingw64/include/_timeval.h \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/algorithm \
   D:/cppCompliler/mingw64/include/c++/16.1.0/backward/binders.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bit \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/algorithmfwd.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/alloc_traits.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/allocator.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/basic_ios.h \
@@ -55,26 +53,21 @@ CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj: D:/project
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/ptr_traits.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/range_access.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/requires_hosted.h \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/sstream.tcc \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/std_abs.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stdexcept_except.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stdexcept_throw.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stdexcept_throwfwd.h \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_algo.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_algobase.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_construct.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_function.h \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_heap.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_iterator.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_iterator_base_funcs.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_iterator_base_types.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_pair.h \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_tempbuf.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/streambuf.tcc \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/streambuf_iterator.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/string_view.tcc \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stringfwd.h \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/bits/uniform_int_dist.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/uses_allocator.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/uses_allocator_args.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/bits/utility.h \
@@ -103,10 +96,7 @@ CMakeFiles/CustomLibrary.dir/src/customLibrery/commandParser.cpp.obj: D:/project
   D:/cppCompliler/mingw64/include/c++/16.1.0/istream \
   D:/cppCompliler/mingw64/include/c++/16.1.0/new \
   D:/cppCompliler/mingw64/include/c++/16.1.0/ostream \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/pstl/execution_defs.h \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/pstl/glue_algorithm_defs.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/pstl/pstl_config.h \
-  D:/cppCompliler/mingw64/include/c++/16.1.0/sstream \
   D:/cppCompliler/mingw64/include/c++/16.1.0/stdexcept \
   D:/cppCompliler/mingw64/include/c++/16.1.0/stdlib.h \
   D:/cppCompliler/mingw64/include/c++/16.1.0/streambuf \
@@ -617,8 +607,6 @@ D:/projects/RedisLite/include/doublyLinkedList.h:
 
 D:/cppCompliler/mingw64/include/_timeval.h:
 
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_algo.h:
-
 D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/c++config.h:
 
 D:/cppCompliler/mingw64/include/_mingw_secapi.h:
@@ -631,11 +619,13 @@ D:/cppCompliler/mingw64/include/crtdefs.h:
 
 D:/cppCompliler/mingw64/include/_mingw.h:
 
+D:/cppCompliler/mingw64/include/c++/16.1.0/bits/new_allocator.h:
+
+D:/cppCompliler/mingw64/include/c++/16.1.0/backward/binders.h:
+
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/basic_ios.h:
 
 D:/cppCompliler/mingw64/include/_mingw_off_t.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/algorithm:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/ostream:
 
@@ -645,9 +635,7 @@ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/charconv.h:
 
 D:/cppCompliler/mingw64/include/_mingw_stat64.h:
 
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/new_allocator.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/backward/binders.h:
+D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_iterator.h:
 
 D:/cppCompliler/mingw64/include/sec_api/wconio_s.h:
 
@@ -660,12 +648,6 @@ D:/cppCompliler/mingw64/include/c++/16.1.0/ext/numeric_traits.h:
 D:/cppCompliler/mingw64/include/c++/16.1.0/debug/assertions.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bit:
-
-D:/cppCompliler/mingw64/include/signal.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_function.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/algorithmfwd.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/postypes.h:
 
@@ -707,13 +689,13 @@ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/cpp_type_traits.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/cxxabi_forced.h:
 
+D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_iterator_base_types.h:
+
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/cxxabi_init_exception.h:
 
 D:/cppCompliler/mingw64/include/pthread.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/exception_defines.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_heap.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/new_except.h:
 
@@ -737,19 +719,19 @@ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/istream.tcc:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/locale_classes.tcc:
 
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/sstream.tcc:
-
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/locale_facets.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/localefwd.h:
 
-D:/cppCompliler/mingw64/include/c++/16.1.0/sstream:
+D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_iterator_base_funcs.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/memory_resource.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/memoryfwd.h:
+
+D:/cppCompliler/mingw64/include/c++/16.1.0/bits/streambuf.tcc:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/move.h:
 
@@ -785,25 +767,17 @@ D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stdexcept_throw.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stdexcept_throwfwd.h:
 
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_iterator.h:
+D:/cppCompliler/mingw64/include/signal.h:
 
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_iterator_base_funcs.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_iterator_base_types.h:
+D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_function.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_pair.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stl_tempbuf.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/streambuf.tcc:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/streambuf_iterator.h:
 
 D:/projects/RedisLite/src/customLibrery/linkedList.cpp:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/stringfwd.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/bits/uniform_int_dist.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/bits/uses_allocator.h:
 
@@ -852,10 +826,6 @@ D:/cppCompliler/mingw64/include/c++/16.1.0/iosfwd:
 D:/cppCompliler/mingw64/include/c++/16.1.0/iostream:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/new:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/pstl/execution_defs.h:
-
-D:/cppCompliler/mingw64/include/c++/16.1.0/pstl/glue_algorithm_defs.h:
 
 D:/cppCompliler/mingw64/include/c++/16.1.0/pstl/pstl_config.h:
 

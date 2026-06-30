@@ -92,13 +92,28 @@ void HashMap<K, V>::set(K key, V value) {
 }
 
 template<typename K, typename V>
-V HashMap<K, V>::get(K key) const {
+V& HashMap<K, V>::get(K key) {
+    int idx = getBucketIndex(key);
+    DoublyLinkedList<Node<K, V>>& chain = buckets.get(idx);
+    
+    int chainSize = chain.getSize();
+    for (int i = 0; i < chainSize; i++) {
+        Node<K, V>& entry = chain.get(i);
+        if (entry.key == key) {
+            return entry.value;
+        }
+    }
+    throw "Key not found";
+}
+
+template<typename K, typename V>
+const V& HashMap<K, V>::get(K key) const {
     int idx = getBucketIndex(key);
     const DoublyLinkedList<Node<K, V>>& chain = buckets.get(idx);
     
     int chainSize = chain.getSize();
     for (int i = 0; i < chainSize; i++) {
-        Node<K, V> entry = chain.get(i);
+        const Node<K, V>& entry = chain.get(i);
         if (entry.key == key) {
             return entry.value;
         }
@@ -113,7 +128,7 @@ void HashMap<K, V>::remove(K key) {
     
     int chainSize = chain.getSize();
     for (int i = 0; i < chainSize; i++) {
-        Node<K, V> entry = chain.get(i);
+        const Node<K, V>& entry = chain.get(i);
         if (entry.key == key) {
             chain.remove(i);
             size--;
@@ -135,7 +150,7 @@ bool HashMap<K, V>::exist(K key) const {
     
     int chainSize = chain.getSize();
     for (int i = 0; i < chainSize; i++) {
-        Node<K, V> entry = chain.get(i);
+        const Node<K, V>& entry = chain.get(i);
         if (entry.key == key) {
             return true;
         }

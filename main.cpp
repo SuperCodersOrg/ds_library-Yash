@@ -4,5 +4,6 @@
 int main() {
     CommandParser cli;
     cli.startREPL();
+    cli.~CommandParser();
     return 0;
 }
